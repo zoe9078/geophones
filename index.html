@@ -42,7 +42,7 @@
     <!-- the path should end with the name without the extension e.g. if file is 'pinball.fset' the path should end with 'pinball' -->
     <a-nft
       type="nft"
-      url="imagedescription.js"
+      url="swordbetterres.iset"
       smooth="true"
       smoothCount="10"
       smoothTolerance=".01"
