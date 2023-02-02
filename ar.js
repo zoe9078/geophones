@@ -27,7 +27,7 @@
 <body style="margin : 0px; overflow: hidden;">
   <!-- minimal loader shown until image descriptors are loaded. Loading may take a while according to the device computational power -->
   <div class="arjs-loader">
-    <div>Loading, please wait...</div>
+    <div>Loading...</div>
   </div>
 
   <!-- a-frame scene -->
@@ -42,7 +42,7 @@
     <!-- the path should end with the name without the extension e.g. if file is 'pinball.fset' the path should end with 'pinball' -->
     <a-nft
       type="nft"
-      url="swordbetterres.iset"
+      url="/swordbetterres.iset"
       smooth="true"
       smoothCount="10"
       smoothTolerance=".01"
@@ -50,7 +50,7 @@
     >
       <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
       <a-entity
-        gltf-model="sword.glb"
+        gltf-model="/sword.glb"
         scale="5 5 5"
         position="50 150 0"
       >
