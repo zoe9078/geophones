@@ -18,13 +18,14 @@
       gesture-detector
       id="scene"
     >
+    
         <a-scene embedded arjs>
         <a-marker preset="hiro">
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
             <a-entity
             position="0 0 0"
             scale="1 1 1"
-            rotation="0 0 0"
+            rotation="90 0 0"
             gltf-model="sword2.gltf"
             class="clickable"
             gesture-handler="minScale: 0.25; maxScale: 10"
