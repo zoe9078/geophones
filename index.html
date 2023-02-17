@@ -8,28 +8,22 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <!-- importing gestures -->
     <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
-    <body style="margin : 0px; overflow: hidden;">
-     
-    <a-scene
-      arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
-      embedded
-      renderer="logarithmicDepthBuffer: true;"
-      vr-mode-ui="enabled: false"
-      gesture-detector
-      id="scene"
-    >
+    <body style="margin : 0px; overflow: hidden;"
     
-        <a-scene embedded arjs>
-        <a-marker preset="hiro">
+        <a-scene embedded arjs
+         vr-mode-ui="enabled: false"
+         gesture-detector
+         id="scene">
+         <a-marker preset="hiro">
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
-            <a-entity
+         <a-entity
             position="0 0 0"
             scale="1 1 1"
             rotation="90 0 0"
             gltf-model="sword2.gltf"
             class="clickable"
             gesture-handler="minScale: 0.25; maxScale: 10"
-            ></a-entity>
+        ></a-entity>
         </a-marker>
         <a-entity camera></a-entity>
         </a-scene>
